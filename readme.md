@@ -1,3 +1,5 @@
+`THIS DOES NOT PARSE CORRECTLY ON GITHUB, AS IT IS WRITTEN IN BARKLEFT`
+
 # Barkdown
 Barkdown is a stupid little markup language made using regex in Python 
 ## Demo
