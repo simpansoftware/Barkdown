@@ -1,0 +1,32 @@
+`codeblock:bean:`
+
+# h1
+## h2
+### h3
+#### h4
+##### h5
+###### h6
+
+*<br>
+"<br>
+'<br>
+&<br>
+<<br>
+><br>
+:smile:<br>
+<br>
+img:https://simpansoftware.cc/me.png<br>
+link:https://example.com<br>
+***text***<br>
+_text_<br>
+*text*<br>
+~~text~~<br>
+||text||<br>
+---
+
+- hi
+- hi again
+
+1. thing
+2. thing
+3. thing
