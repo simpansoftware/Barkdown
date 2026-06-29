@@ -1,4 +1,4 @@
-`THIS DOES NOT PARSE CORRECTLY ON GITHUB, AS IT IS WRITTEN IN BARKLEFT`
+`THIS DOES NOT PARSE CORRECTLY ON GITHUB, AS IT IS WRITTEN IN BARKDOWN`
 
 # Barkdown
 Barkdown is a stupid little markup language made using regex rules in Python 
