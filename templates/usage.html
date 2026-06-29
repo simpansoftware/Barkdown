@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Barkdown | Usage</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <h1 style="text-align: center;">Barkdown | Usage</h1>
+        <div class="render">
+            <div class="rendertext">
+                <h1>Before you read the syntax, read this!</h1>
+                Barkdown does not support the following<br>
+                <ul><li>Escaping characters</li><li>Multiline code blocks</li></ul>
+
+                Blank lines are ignored, but can be inserted by writing a line break.
+
+                <h1>Headings</h1>
+                Barkdown supports headings of sizes h1 to h6, and you enter these by doing the following:<br><br>
+                <code># text</code> - h1<br>
+                <code>## text</code> - h2<br>
+                <code>### text</code> - h3 and so on
+                <h1>Inline code</h1>
+                Barkdown supports inline code snippets by writing the following:<br> 
+                `text and here's a space at the end
+                `<br>
+                <h1>Line breaks</h1>
+                Barkdown supports line breaks by writing the following:<br>
+                <pre><code>&lt;br&gt;</code></pre>
+                <h1>Emojis</h1>
+                Huge, HUGE shoutouts to <a href="https://github.com/Trulle1234">https://github.com/Trulle1234</a> for his emoji mappings. (might be another source, but i don't really care if it's big corpo)<br>
+                Barkdown supports writing emojis by entering the following:<br>
+                <code>:smile:</code>, which renders the emoji of a smile which is 😄.<br>
+                All emoji mappings can be found in emojis.py.
+                <h1>Images</h1>
+                Barkdown supports images by writing the following:<br>
+                <code>img:https://example.com/me.png</code>, which will render that image.<br>
+                Note that custom scaling isn't supported, and it has to be a direct link to the image.
+                <h1>Links</h1>
+                Barkdown supports links by writing the following:<br>
+                <code>link:https://example.com</code>, which will make a hyperlink to that webpage.<br>
+                Note that custom link names aren't supported, and they render as the link.
+                <h1>Bolding</h1>
+                Barkdown supports bolding by writing the following:<br>
+                <code>*text*</code>
+                <h1>Italicization (or simply just making text italic)</h1>
+                Barkdown supports italicization by writing the following:<br>
+                <code>_text_</code>
+                <h1>Bolding and italicization in the same word</h1>
+                Barkdown supports both bolding and italicization in the same word by writing the following:<br>
+                <code>***text***</code>
+                <h1>Strikethrough text</h1>
+                Barkdown supports strikethrough text by writing the following:<br>
+                <code>~~text~~</code>
+                <h1>Spoilers</h1>
+                Barkdown supports spoilers by writing the following:<br>
+                <code>||text||</code>
+                <h1>Horizontal rules</h1>
+                Barkdown supports horizontal rules by writing the following all by itself between two lines:<br>
+                <code>---</code>
+                <h1>Ordered lists</h1>
+                Barkdown supports ordered lists by writing the following:<br>
+                <code>1. line one</code><br>
+                <code>2. line two</code><br>
+                <code>3. line three</code>
+                <h1>Unordered lists</h1>
+                Barkdown supports unordered lists by writing the following:<br>
+                <code>- line one</code><br>
+                <code>- line two</code><br>
+                <code>- line three</code>
+            </div>
+        </div>
+        <div class="footer">
+            <a href="/" >Homepage</a>
+            <a href="/usage">Usage</a>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,60 @@
+# Before you read the syntax, read this!
+Barkdown does not support the following<br>
+- Escaping characters
+- Multiline code blocks
+
+Blank lines are ignored, but can be inserted by writing a line break.
+
+# Headings
+Barkdown supports headings of sizes h1 to h6, and you enter these by doing the following:<br><br>
+`# text` - h1<br>
+`## text` - h2<br>
+`### text` - h3 and so on
+# Inline code
+Barkdown supports inline code snippets by writing the following:<br> 
+`text and here's a space at the end
+`<br>
+# Line breaks
+Barkdown supports line breaks by writing the following:<br>
+`<br>`
+# Emojis
+Huge, HUGE shoutouts to link:https://github.com/Trulle1234 for his emoji mappings. (might be another source, but i don't really care if it's big corpo)<br>
+Barkdown supports writing emojis by entering the following:<br>
+`:smile:`, which renders the emoji of a smile which is :smile:.<br>
+All emoji mappings can be found in emojis.py.
+# Images
+Barkdown supports images by writing the following:<br>
+`img:https://example.com/me.png`, which will render that image.<br>
+Note that custom scaling isn't supported, and it has to be a direct link to the image.
+# Links
+Barkdown supports links by writing the following:<br>
+`link:https://example.com`, which will make a hyperlink to that webpage.<br>
+Note that custom link names aren't supported, and they render as the link.
+# Bolding
+Barkdown supports bolding by writing the following:<br>
+`*text*`
+# Italicization (or simply just making text italic)
+Barkdown supports italicization by writing the following:<br>
+`_text_`
+# Bolding and italicization in the same word
+Barkdown supports both bolding and italicization in the same word by writing the following:<br>
+`***text***`
+# Strikethrough text
+Barkdown supports strikethrough text by writing the following:<br>
+`~~text~~`
+# Spoilers
+Barkdown supports spoilers by writing the following:<br>
+`||text||`
+# Horizontal rules
+Barkdown supports horizontal rules by writing the following all by itself between two lines:<br>
+`---`
+# Ordered lists
+Barkdown supports ordered lists by writing the following:<br>
+`1. line one`<br>
+`2. line two`<br>
+`3. line three`
+# Unordered lists
+Barkdown supports unordered lists by writing the following:<br>
+`- line one`<br>
+`- line two`<br>
+`- line three`

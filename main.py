@@ -1,7 +1,6 @@
 from flask import Flask, render_template,request
 from emojis import emojis
 import re
-from waitress import serve
 
 # code is shit i know but it works?
 # note: i have taken some help from some llm for the advanced regex
@@ -43,6 +42,7 @@ def parse(text):
         return f"@@CODE{len(codeblocks)-1}@@"
 
     # raw first
+    text = text.replace("\r\n", "\n").replace("\r", "\n")
     text = text.replace("&", "&amp;")
     text = text.replace("\"", "&quot;")
     text = text.replace("\'", "&#x27;")
@@ -77,11 +77,13 @@ def parse(text):
         text = text.replace(f"@@CODE{i}@@", block)
     return text
 
-
-
 @app.route("/", methods=["GET"])
 def index():
     return render_template("index.html")
+
+@app.route("/usage", methods=["GET"])
+def syntax():
+    return render_template("usage.html")
 
 @app.route("/render", methods=["POST"])
 def render():
@@ -89,4 +91,4 @@ def render():
     html = parse(mltext)
     return render_template("render.html", render=html)
 
-serve(app, host="0.0.0.0", port=2048)
+app.run(host="0.0.0.0", port=2048)

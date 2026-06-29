@@ -1,0 +1,17 @@
+`THIS DOES NOT PARSE CORRECTLY ON GITHUB, AS IT IS WRITTEN IN BARKLEFT`
+
+# Barkdown
+Barkdown is a stupid little markup language made using regex rules in Python 
+## Demo
+Demo is hosted at link:https://barkdown.4lvaret.tech
+## Running from source
+1. Install Python (figure out how to do that for your os) <br>
+2. Using git, clone link:https://github.com/simpansoftware/Barkdown <br>
+3. Run `pip install flask` <br>
+4. Run `python main.py`, this will return some stuff about it being a dev server, but go to localhost:2048 and you should see the Barkdown renderer.
+## What is the valid syntax?
+See this and test.bd as examples, and look in syntax.bd or link:https://barkdown.4lvaret.tech/usage for rules or
+## Credits
+- Me for mostly everything
+- Some AI for helping with some regex
+- link:https://github.com/Trulle1234 for the emoji mappings 
